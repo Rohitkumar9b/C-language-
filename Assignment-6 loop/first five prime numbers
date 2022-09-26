@@ -1,0 +1,22 @@
+main()
+{
+int p,t,i,r=1,n;
+printf("Enter a number");
+scanf("%d",&n);
+for(p=1;p<=n;p++)
+{
+for(t=2;t>=2;t++)
+    {
+        for(i=2;i<t;i++)
+        {
+            r=t%i;
+            if(r==0)
+                break;
+        }
+        if(r!=0)
+            break;
+    }
+   if(r!=0)
+  printf("%d ",t);
+}
+}
